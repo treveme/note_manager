@@ -1,12 +1,10 @@
-username = 'Александр'
-print(username)
-title = 'Покупка продуктов'
-print(title)
-content = 'Купить горошек, черный хлеб.'
-print(content)
-status = 'active'
-print(status)
-created_date =('25-12-2024')
-print(created_date)
-issue_date = ('10-01-2-2025')
-print(issue_date)
+from datetime import datetime
+
+created_date = datetime(2024, 12, 18)
+issue_date = datetime(2024, 12, 18)
+
+temp_created_date = created_date.strftime("%d-%m")
+temp_issue_date = issue_date.strftime("%d-%m")
+
+print(f"Created Date: {temp_created_date}")
+print(f"Issue Date: {temp_issue_date}")
